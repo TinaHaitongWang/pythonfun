@@ -1,19 +1,14 @@
 def main():
-	add_two(3,5)
-	subtract_two(2,1)
-	multiply_two(5,5)
+	p = add_three(3,5,4)
+	multipleTheAnswer(3,p)
 
-def add_two(v1,v2):
+def add_three(v1,v2,v3):
 	"""do somthing 
 	"""
-	p = v1+ v2
+	p = v1+ v2+v3
 	print(p)
-def subtract_two(v1,v2):
-	"""do more
-	"""
-	p = v1 -v2
-	print(p)
-def multiply_two(v1, v2):
+	return p
+def multipleTheAnswer(v1, v2):
 	"""multiply two numbers
 
 	:param v1: number one
@@ -24,5 +19,5 @@ def multiply_two(v1, v2):
 	print(p)
 	
 	return p
-if _name_ =="_main_":
+if __name__ =="__main__":
 	main()
